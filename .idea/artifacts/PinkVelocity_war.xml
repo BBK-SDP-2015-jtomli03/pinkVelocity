@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="PinkVelocity:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <root id="archive" name="PinkVelocity.war">
+      <element id="artifact" artifact-name="PinkVelocity:war exploded" />
+    </root>
+  </artifact>
+</component>

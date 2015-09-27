@@ -1,0 +1,53 @@
+# Intellij
+.idea/
+*.iml
+*.iws
+
+# External tool builders
+.externalToolBuilders/
+
+# Mac
+.DS_Store
+
+*target*
+*.jar
+*.war
+*.ear
+*.class
+
+# Spring
+*.DS_Store
+bin
+target
+.settings
+src/main/webapp/META-INF
+.idea
+*.java.hsp
+*.sonarj
+*.sw*
+.DS_Store
+.settings
+.springBeans
+build.sh
+integration-repo
+ivy-cache
+jxl.log
+jmx.log
+derby.log
+spring-test/test-output/
+.gradle
+argfile*
+activemq-data/
+
+/build
+buildSrc/build
+/spring-*/build
+/src/asciidoc/build
+target/
+
+# IDEA artifacts and output dirs
+*.ipr
+out
+test-output
+atlassian-ide-plugin.xml
+.gradletasknamecache
