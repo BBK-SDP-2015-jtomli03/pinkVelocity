@@ -1,5 +1,6 @@
 package com.sky.bean;
 
+import java.math.BigDecimal;
 import java.util.List;
 
 /**
@@ -7,9 +8,9 @@ import java.util.List;
  */
 public interface Product {
 
-    Double getPrice();
+    BigDecimal getPrice();
 
-    void setPrice(Double price);
+    void setPrice(BigDecimal price);
 
     String getName();
 
@@ -22,4 +23,8 @@ public interface Product {
     void addProductSupplier(ProductSupplier supplier);
 
     List<ProductSupplier> getProductSuppliers();
+
+    String getProductCode();
+
+    void setProductCode(String productCode);
 }

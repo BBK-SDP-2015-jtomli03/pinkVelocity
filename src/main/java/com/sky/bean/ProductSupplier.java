@@ -5,4 +5,6 @@ package com.sky.bean;
  */
 public interface ProductSupplier {
     //contact details
+
+    String getAddress();
 }

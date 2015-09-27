@@ -1,28 +1,37 @@
 package com.sky.bean;
 
+import java.math.BigDecimal;
+import java.util.ArrayList;
 import java.util.List;
 
 /**
  * Created by Jo on 25/09/2015.
  */
 public class ProductImpl implements Product {
+    private int id;
+    private String productCode;
+    private String name;
+    private BigDecimal price;
+    private String description;
+    private List<ProductSupplier> suppliers;
 
-    String name;
-    Double price;
-
-    public ProductImpl(String name, Double price){
+    public ProductImpl(int id, String productCode, String name, BigDecimal price, String description){
+        this.id = id;
+        this.productCode = productCode;
         this.name = name;
         this.price = price;
+        this.description = description;
+        suppliers = new ArrayList<ProductSupplier>();
     }
 
     @Override
-    public Double getPrice() {
+    public BigDecimal getPrice() {
         return price;
     }
 
     @Override
-    public void setPrice(Double price) {
-
+    public void setPrice(BigDecimal price) {
+        this.price = price;
     }
 
     @Override
@@ -32,26 +41,37 @@ public class ProductImpl implements Product {
 
     @Override
     public void setName(String name) {
-
+        this.name = name;
     }
 
     @Override
     public String getDescription() {
-        return null;
+        return description;
     }
 
     @Override
     public void setDescription(String description) {
-
+        this.description = description;
     }
 
     @Override
     public void addProductSupplier(ProductSupplier supplier) {
-
+        suppliers.add(supplier);
     }
 
     @Override
     public List<ProductSupplier> getProductSuppliers() {
-        return null;
+        return suppliers;
     }
+
+    @Override
+    public String getProductCode() {
+        return productCode;
+    }
+
+    @Override
+    public void setProductCode(String productCode) {
+        this.productCode = productCode;
+    }
+
 }
