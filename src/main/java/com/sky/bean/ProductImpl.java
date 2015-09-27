@@ -13,13 +13,15 @@ public class ProductImpl implements Product {
     private String name;
     private BigDecimal price;
     private String description;
+    private int stockLevel;
     private List<ProductSupplier> suppliers;
+    private String imageUrl;
+    private boolean discontinued;
 
-    public ProductImpl(int id, String productCode, String name, BigDecimal price, String description){
+    public ProductImpl(int id, String productCode, String name, String description){
         this.id = id;
         this.productCode = productCode;
         this.name = name;
-        this.price = price;
         this.description = description;
         suppliers = new ArrayList<ProductSupplier>();
     }
@@ -72,6 +74,22 @@ public class ProductImpl implements Product {
     @Override
     public void setProductCode(String productCode) {
         this.productCode = productCode;
+    }
+
+    public int getStockLevel() {
+        return stockLevel;
+    }
+
+    public void setStockLevel(int stockLevel) {
+        this.stockLevel = stockLevel;
+    }
+
+    public String getImageUrl() {
+        return imageUrl;
+    }
+
+    public void setImageUrl(String imageUrl) {
+        this.imageUrl = imageUrl;
     }
 
 }

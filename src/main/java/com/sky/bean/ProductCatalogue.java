@@ -1,5 +1,6 @@
 package com.sky.bean;
 
+import java.math.BigDecimal;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -13,8 +14,8 @@ public class ProductCatalogue implements Catalogue{
 
     private ProductCatalogue(){
         products = new ArrayList<Product>();
-        products.add(new ProductImpl("Gnome", 2.00));
-        products.add(new ProductImpl("SpecialGnome", 100.00));
+        products.add(new ProductImpl(1, "hwufhei", "Gnome",  "a gnome"));
+        products.add(new ProductImpl(2, "fuwhfi", "SpecialGnome",  "another gnome"));
     }
 
     public static ProductCatalogue getCatalogue(){

@@ -5,6 +5,7 @@ package com.sky.bean;
  */
 public class ProductSupplierImpl implements ProductSupplier{
     private int id;
+    private String companyName;
     private String addressLine1;
     private String addressLine2;
     private String addressLine3;
